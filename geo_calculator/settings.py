@@ -55,7 +55,7 @@ ROOT_URLCONF = 'geo_calculator.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / 'geo_calculator/templates/partials'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
