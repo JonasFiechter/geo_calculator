@@ -23,7 +23,7 @@ a {
 }
 
 a:hover {
-    color: aquamarine;
+    color:  rgb(150, 240, 140);
 }
 
 .content {
@@ -67,9 +67,9 @@ a:hover {
 }
 
 .base-header-menu li a:hover {
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
+    background-color: rgb(150, 240, 140);
     transition: 200ms ease-in-out;
+    color: black;
 }
 
 footer {
