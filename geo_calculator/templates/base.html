@@ -8,19 +8,28 @@
     <link rel="stylesheet" href="{% static 'vendor/css/styles.css' %}"/>
     <title>{% block 'title' %}{% endblock %}</title>
 </head>
-<body>
-    <header class="base-header">
-        <div class="base-header-logo"><h3>GEO Calculator</h3></div>
+<header class="base-header-container">
+    <div class="base-header">
+        <div class="base-header-logo"><h4>GEO Calculator</h4></div>
         <div class="base-header-menu-container">
             <ul class="base-header-menu">
-                <li>MenuLink 1</li>
-                <li>MenuLink 2</li>
-                <li>MenuLink 3</li>
-                <li>MenuLink 4</li>
+                <li><a href="#">MenuLink 1</a></li>
+                <li><a href="#">MenuLink 2</a></li>
+                <li><a href="#">MenuLink 3</a></li>
+                <li><a href="#">MenuLink 4</a></li>
             </ul>
         </div>
-    </header>
-    <section></section>
-    {% block 'body'%}{% endblock %}
+    </div>
+</header>
+<body>
+    <div class="content">
+        {% block 'body'%}{% endblock %}
+    </div>
 </body>
+<footer>
+    <div>
+        <h4>Made by Jonas Ficehter</h4>
+        <h4><a href="https://github.com/JonasFiechter" target="_blank">My github</a></h4>
+    </div>
+</footer>
 </html>
