@@ -9,7 +9,17 @@
     <title>{% block 'title' %}{% endblock %}</title>
 </head>
 <body>
-    <header></header>
+    <header class="base-header">
+        <div class="base-header-logo"><h3>GEO Calculator</h3></div>
+        <div class="base-header-menu-container">
+            <ul class="base-header-menu">
+                <li>MenuLink 1</li>
+                <li>MenuLink 2</li>
+                <li>MenuLink 3</li>
+                <li>MenuLink 4</li>
+            </ul>
+        </div>
+    </header>
     <section></section>
     {% block 'body'%}{% endblock %}
 </body>
