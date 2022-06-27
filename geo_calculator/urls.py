@@ -16,8 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from home.views import home_view
+from coordinates_converter.views import coordinates_converter_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', home_view, name='home_view'),
+    path('', home_view, name='home'),
+    path('coordinates_converter/', coordinates_converter_view, name='coordinates_converter'),
 ]
