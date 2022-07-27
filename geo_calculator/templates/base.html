@@ -10,7 +10,7 @@
 </head>
 <header class="base-header-container">
     <div class="base-header">
-        <div class="base-header-logo"><h4>GEO Calculator</h4></div>
+        <div class="base-header-logo"><a href="{% url 'home' %}"><h4>GEO Calculator</h4></a></div>
         <div class="base-header-menu-container">
             <ul class="base-header-menu">
                 <li><a href="{% url 'coordinates_converter' %}">Coordinates Converter</a></li>
@@ -22,16 +22,18 @@
     </div>
 </header>
 <body>
-    <div class="content">
-        <h4 class="page-title">
-            {% block 'page-title' %}{% endblock %}
-        </h4>
-        {% block 'body'%}{% endblock %}
+    <div class="main-container">
+        <div class="content">
+            <h3 class="page-title">
+                {% block 'page-title' %}{% endblock %}
+            </h3>
+            {% block 'body'%}{% endblock %}
+        </div>
     </div>
 </body>
 <footer>
     <div>
-        <h4>Made by Jonas Ficehter</h4>
+        <h4>Made by Jonas Fiechter</h4>
         <h4><a href="https://github.com/JonasFiechter" target="_blank">My github</a></h4>
     </div>
 </footer>

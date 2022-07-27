@@ -31,11 +31,16 @@ li {
     list-style: none;
 }
 
-.content {
+.main-container {
     max-width: 100rem;
-    min-height: fit-content;
     margin: 0 auto;
     min-height: 100vh;
+}
+
+.content {
+    background-color: rgba(0, 0, 0, 0.226);
+    margin-top: 3rem;
+    min-height: 83vh;
 }
 
 .base-header-container {
@@ -47,7 +52,6 @@ li {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-
 }
 
 .base-header-logo {
